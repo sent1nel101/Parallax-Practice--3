@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body, html{
+    height: 100%;
+    font-size: 16px;
+    font-weight:400;
+    line-height: 1.8em;
+    color: #666;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    text-align: right;
+}
+.navUl{
+    display:flex;
+    list-style: none;
+    padding: 0 5em;
+    justify-content: center;
+}
+.navUl li{
+    
+}
+.navUl li a{    
+    text-decoration: none;
+    color:white;
+    font-size: 18px;
+    letter-spacing:.1em;
+    margin: 0 3rem;
+}
+.pimg1, .pimg2, .pimg3{
+    position: relative;
+    opacity: .7;
+    background-position: center;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+}
+
+
+.pimg1{
+    min-height: 100%;
+    background-image: url('Dan-Ballard-Landscapes-6.jpg');
+}
+.pimg2{
+    min-height: 550px;
+    background-image: url('W4A2827-1-3000x2000.jpg');
+}
+.pimg3{
+    min-height: 550px;
+    background-image: url('Neckertal_20150527-6384.jpg');
+}
+
+.section{
+    text-align: center;
+    padding: 2rem 4rem;
+}
+
+.section-dark{
+    background-color: #282e34;
+    color:#ddd;
+}
+.section-light{
+    background-color: #f4f4f4;
+    color: #666;
+}
+.ptext{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    font-size: 2rem;
+    color:white;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+}
+.subText{
+    width: 100%;
+    position:absolute;
+    top: 53%;
+    text-align: center;
+    color: white;
+}
+
+.ptext .border{
+    background-color: rgba(17, 17, 17, 0.226);
+    color: white;
+    padding: 2rem;
+    border-radius: 30px;
+}
+.ptext .border.trans{
+    background-color: transparent;
+}
+
+@media(max-width: 568px){
+    .pimg1, .pimg2, .pimg3{
+        background-attachment: scroll;
+    }
+}
