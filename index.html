@@ -6,42 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Parallax Practice #3</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>    
   </head>
   <body>
-    <div class="pimg1">
-      <div class="navbar">
-        <img src="" />
-        <ul class="navUl">
-          <li><a href="#" class="active">Home</a></li>
-          <li><a href="#">More</a></li>
-          <li><a href="#">Contact</a></li>
+    <div id="navbar">
+        <ul id="navUl" class="navUl">
+            <li><a href="#">One</a></li>
+            <li><a href="#">Two</a></li>
+            <li><a href="#">Three</a></li>
         </ul>
-      </div>
-      <div class="ptext">
-        <span class="border">Parallax Website<br /></span>
-      </div>
-      <sub class="subText">Designed by: Darec McDaniel</sub>
+</div>
+<div class="pimg1">          
+    <div class="ptext">
+        <img id="logo-img" src="My Post.png" />
+        </div>
     </div>
 
     <section class="section section-light">
-      <h2>Section One</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cum dicta esse
-        sequi obcaecati recusandae numquam reprehenderit magnam repellat
-        aspernatur eum placeat alias dolor vitae delectus quam debitis ducimus,
-        quaerat quisquam et, natus dolorum maiores. Necessitatibus nisi odio
-        laborum, aperiam quod, nostrum dolores quae unde eaque perferendis,
-        pariatur rerum excepturi aut? Asperiores minus tenetur debitis
-        praesentium sed voluptates dolorem, harum non expedita! Debitis incidunt
-        illo aut dolore sint! Accusamus iusto distinctio perferendis neque eum
-        aliquid fugiat commodi voluptate repellendus magnam nam repellat quae
-        illum modi eius, blanditiis totam numquam quam fuga optio vel. Neque
-        rerum sint assumenda quisquam quos, incidunt quas?
-      </p>
+    <h2>Techopedia Explains Parallax Scrolling</h2>
+    
+    The word "parallax" is taken from astronomy and defined as the apparent displacement or the difference in apparent direction of something when viewed from two different vantage points.
+
+    In the world of digital graphics, programmers can achieve parallax scrolling in different ways. One involves creating different layers that move at uneven speeds when rendered in a browser or other viewer. Alternately, programmers can create "sprites," or independent parts of an image, often in the form of avatars or characters that move within a digital landscape. The cycling of repeating patterns is another technique that has been useful in many video game projects and other animations, and programmers can also manipulate the rendering of raster graphics or bitmapped visuals to create parallax scrolling.
+    
+    In general, developers have to consider various elements to create a parallax scrolling effect with integrity and versatility. For example, one approach involves the creation of image layers through attribution, followed by assigning a scroll function and designating speeds for each item, then adding any HTML or CSS fixes for different browsers or viewers. As with other kinds of visual projects, incorporating the right syntax of the latest versions of these resources are crucial to developing a parallax scrolling technique that works well.
+    </p>
     </section>
     <div class="pimg2">
+        <div class="section-container">
+            <p>
+              <div class="card" style="width: 18rem;">
+                  <img src="https://picsum.photos/200/300" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="https://picsum.photos/200/301" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+                <div class="card" style="width: 18rem;">
+                  <img src="https://picsum.photos/201/300" class="card-img-top" alt="...">
+                  <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  </div>
+                </div>
+        </div>
       <div class="ptext">
-        <span class="border trans">Image Two Text</span>
+        <!-- <span class="border trans">Image Two Text</span> -->
+         
       </div>
     </div>
 
@@ -59,7 +74,7 @@
     </section>
     <div class="pimg3">
       <div class="ptext">
-        <span class="border trans">Image Three Text</span>
+        <!-- <span class="border trans">Image Three Text</span> -->
       </div>
     </div>
     <section class="section section-dark">
@@ -74,10 +89,14 @@
         praesentium sed voluptates dolorem, harum non expedita! Debitis incidunt
       </p>
     </section>
-    <div class="pimg1">
-      <div class="ptext">
-        <span class="border">McDaniel Web Designs</span>
+    <div class="pimg4">
+      <div class="ptext2">
+          <span class="border">Parallax Website<br /></span>
+      </div>
+      <sub class="subText">Designed by: Darec McDaniel</sub>
+        <!-- <span class="border">McDaniel Web Designs</span> -->
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>

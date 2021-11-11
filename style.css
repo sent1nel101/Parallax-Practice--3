@@ -8,30 +8,54 @@ body, html{
     font-size: 16px;
     font-weight:400;
     line-height: 1.8em;
-    color: #666;
+    /* color: #666; */
     font-family: 'Poppins', sans-serif;
+    text-align: center;
+    overflow-x: hidden;
+    /* background: transparent; */
+}
+#logo-img{
+    position: absolute;
+    left: calc(50% - 250px);
+    width: 500px;
+    transition: all 10s ease-in-out;
+    z-index: 3;
+}
+#logo-img:hover{
+    transform: rotate(360deg);
 }
 
-.navbar{
-    text-align: right;
+#navbar{
+    width: 100%;
+    position:absolute;
+    z-index:1;
 }
 .navUl{
-    display:flex;
     list-style: none;
-    padding: 0 5em;
-    justify-content: center;
+    display:flex;
+    justify-content: space-evenly;
+    width: 100%;
+    align-items: center;
+    background:#141414;
 }
 .navUl li{
-    
+    padding-top:10px;
+    color: #141414;
 }
-.navUl li a{    
+.navUl li a{  
     text-decoration: none;
-    color:white;
+    color:rgb(201, 192, 192);
     font-size: 18px;
     letter-spacing:.1em;
-    margin: 0 3rem;
+    text-shadow: 2px 2px 7px;
+    font-variant: small-caps;
 }
-.pimg1, .pimg2, .pimg3{
+a:hover{
+    position: relative;
+    top: 1px;
+    cursor: pointer;
+}
+.pimg1, .pimg2, .pimg3, .pimg4{
     position: relative;
     opacity: .7;
     background-position: center;
@@ -46,46 +70,103 @@ body, html{
     background-image: url('Dan-Ballard-Landscapes-6.jpg');
 }
 .pimg2{
-    min-height: 550px;
+    min-height: 650px;
     background-image: url('W4A2827-1-3000x2000.jpg');
 }
 .pimg3{
     min-height: 550px;
     background-image: url('Neckertal_20150527-6384.jpg');
 }
+.pimg4{
+    min-height: 100vh;
+    background-image: url('Dan-Ballard-Landscapes-6.jpg');
+}
 
 .section{
     text-align: center;
-    padding: 2rem 4rem;
+    padding: 5rem 10rem;
+    z-index: -8;
 }
-
+.section-container{
+    display:flex;
+    align-items: center;
+    justify-content:space-evenly;
+    /* margin: 3rem 0; */
+    padding-top: 2rem;
+    color: white;
+}
+.card{
+    background: transparent;
+    border:1px solid white;
+    transition: all 1.5s ease;
+    opacity: .5;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+.card img{
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    width: 100%;
+}
+.card:hover{
+    transform: scale(1.1);
+    opacity: 1;
+    background: white;
+    color: #141414;
+}
 .section-dark{
     background-color: #282e34;
     color:#ddd;
+    z-index: -5;
 }
 .section-light{
     background-color: #f4f4f4;
     color: #666;
+    z-index: -4;
 }
+
 .ptext{
     width: 100%;
     position: absolute;
     text-align: center;
-    top: 50%;
-    font-size: 2rem;
+    top: 20%;
+    font-size: 3rem;
     color:white;
-    letter-spacing: .1em;
+    letter-spacing: .2em;
+    text-shadow: 2px 2px 7px;
     text-transform: uppercase;
+    z-index: -2;
+}
+
+
+.ptext2{
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    font-size: 3rem;
+    color:white;
+    letter-spacing: .2em;
+    text-shadow: 2px 2px 7px;
+    text-transform: uppercase;
+    z-index: -2;
 }
 .subText{
     width: 100%;
     position:absolute;
-    top: 53%;
+    top: 54%;
+    right: 0%;
+    letter-spacing: .7em;
     text-align: center;
     color: white;
 }
 
-.ptext .border{
+.active{
+    text-transform: uppercase;
+}
+.ptext .border, .ptext2 .border{
     background-color: rgba(17, 17, 17, 0.226);
     color: white;
     padding: 2rem;
@@ -96,7 +177,16 @@ body, html{
 }
 
 @media(max-width: 568px){
-    .pimg1, .pimg2, .pimg3{
+    .pimg1, .pimg2, .pimg3, .pimg4{
         background-attachment: scroll;
     }
+}
+.navBackgroundStart{
+    background:transparent;
+}
+.addBlackBackground{
+    background: black;
+}
+.changeColor{
+    background-color:black;
 }
